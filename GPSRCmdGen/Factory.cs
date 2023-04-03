@@ -16,11 +16,11 @@ namespace RoboCup.AtHome.GPSRCmdGen
 		public static List<Gesture> GetDefaultGestures()
 		{
 			List<Gesture> gestures = new List<Gesture>();
-			gestures.Add(new Gesture("waving", DifficultyDegree.Easy));
-			gestures.Add(new Gesture("rising left arm", DifficultyDegree.Easy));
-			gestures.Add(new Gesture("rising right arm", DifficultyDegree.Easy));
-			gestures.Add(new Gesture("pointing left", DifficultyDegree.Easy));
-			gestures.Add(new Gesture("pointing right", DifficultyDegree.Easy));
+			gestures.Add(new Gesture("waving", DifficultyDegree.Low));
+			gestures.Add(new Gesture("rising left arm", DifficultyDegree.Low));
+			gestures.Add(new Gesture("rising right arm", DifficultyDegree.Low));
+			gestures.Add(new Gesture("pointing left", DifficultyDegree.Low));
+			gestures.Add(new Gesture("pointing right", DifficultyDegree.Low));
 			return gestures;
 		}
 
@@ -124,7 +124,7 @@ namespace RoboCup.AtHome.GPSRCmdGen
 			bedside.Room = new Room("bedroom");
 			Category candies = new Category("candies", bedside);
 			candies.AddObject("choco syrup", GPSRObjectType.Known, DifficultyDegree.Moderate);
-			candies.AddObject("bisquits", GPSRObjectType.Known, DifficultyDegree.Easy);
+			candies.AddObject("bisquits", GPSRObjectType.Known, DifficultyDegree.Low);
 			candies.AddObject("baby sweets", GPSRObjectType.Alike, DifficultyDegree.Moderate);
 			candies.AddObject("egg", GPSRObjectType.Known, DifficultyDegree.High);
 			tmp.Add(candies);

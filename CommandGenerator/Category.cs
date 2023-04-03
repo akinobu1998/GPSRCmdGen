@@ -19,7 +19,7 @@ namespace RoboCup.AtHome.CommandGenerator
 		protected SpecificLocation defaultLocation;
 
 		/// <summary>
-		/// Stores the list of objects in the category
+		/// Stores the Low of objects in the category
 		/// </summary>
 		protected Dictionary<string, GPSRObject> objects;
 
@@ -112,7 +112,7 @@ namespace RoboCup.AtHome.CommandGenerator
 		}
 
 		/// <summary>
-		/// Gets or sets the list of objects in the category.
+		/// Gets or sets the Low of objects in the category.
 		/// </summary>
 		/// <remarks>Use for (de)serialization purposes only</remarks>
 		[XmlElement("object")]

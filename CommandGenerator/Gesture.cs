@@ -14,13 +14,13 @@ namespace RoboCup.AtHome.CommandGenerator
 		/// Initializes a new instance of the <see cref="RoboCup.AtHome.CommandGenerator.Gesture"/> class.
 		/// </summary>
 		/// <remarks>Intended fo serialiazation purposes only</remarks>
-		public Gesture () : this("none", DifficultyDegree.Easy){ }
+		public Gesture () : this("none", DifficultyDegree.Low){ }
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="RoboCup.AtHome.CommandGenerator.Gesture"/> class.
 		/// </summary>
 		/// <param name="name">The name of the gesture</param>
-		public Gesture (string name) : this(name, DifficultyDegree.Easy){ }
+		public Gesture (string name) : this(name, DifficultyDegree.Low){ }
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="RoboCup.AtHome.CommandGenerator.Gesture"/> class.

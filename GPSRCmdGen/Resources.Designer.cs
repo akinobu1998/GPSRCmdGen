@@ -61,25 +61,48 @@ namespace RoboCup.AtHome.GPSRCmdGen {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ; grammar name Category I
-        ///; grammar tier Easy
+        ///   Looks up a localized string similar to ; grammar name Category Zero
+        ///; grammar tier Low
         ///
-        ///$Main     = $complex.
-        ///
-        ///
-        ///##############################################################################
-        ///#
-        ///# Complex commands
-        ///#
-        ///##############################################################################
-        ///$complex  = $triple
-        ///$complex  = $doublel, and $single
-        ///$complex  = $single, $doubler
-        ///$complex  = $single, $single, and $single
+        ///$Main		= $complex 
         ///
         ///##############################################################################
         ///#
-        ///# Triple task commands (in logical [rest of string was truncated]&quot;;.
+        ///# Carrying: Go to room, grasp an object and place it
+        ///# 
+        ///##############################################################################
+        ///$complex	= $goroom, $graspobj and ($placeobj | $giveobj)
+        ///
+        ///$goroom		= $vbgoto the {room}
+        ///$graspobj	= $vbgrasp the {kobject} on the ${beacon}
+        ///$placeobj	= $vbplace it on the {placement}
+        ///$giveobj	= $vbgive it to {nam [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Category0Grammar {
+            get {
+                return ResourceManager.GetString("Category0Grammar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ##############################################################################
+        ///#
+        ///# Category1 Grammar
+        ///# 
+        ///# Author:  Mauricio Matamoros
+        ///# Date:    March 2015
+        ///#
+        ///# IMPORTANT: 
+        ///# Since this document declares a grammar for generating sentences,
+        ///# NO RECURSIVE rules must be used.
+        ///# 
+        ///##############################################################################
+        ///
+        ////*****************************************************************************
+        ///*
+        ///* FORMAT
+        ///*
+        ///********************************************** [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Category1Grammar {
             get {
@@ -88,25 +111,24 @@ namespace RoboCup.AtHome.GPSRCmdGen {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ; grammar name Category II
-        ///; grammar tier Moderate
-        ///
-        ///$Main     = $polite $complex.
-        ///
-        ///
-        ///##############################################################################
+        ///   Looks up a localized string similar to ##############################################################################
         ///#
-        ///# Complex commands
+        ///# Category2 Grammar
+        ///# 
+        ///# Author:  Mauricio Matamoros
+        ///# Date:    March 2015
         ///#
+        ///# IMPORTANT: 
+        ///# Since this document declares a grammar for generating sentences,
+        ///# NO RECURSIVE rules must be used.
+        ///# 
         ///##############################################################################
-        ///$complex  = $triple
-        ///$complex  = $single, $single, and $single
-        ///$complex  = $doublel, and $single
-        ///$complex  = $single, $doubler
         ///
-        ///##############################################################################
-        ///#
-        ///# Triple task command [rest of string was truncated]&quot;;.
+        ////*****************************************************************************
+        ///*
+        ///* FORMAT
+        ///*
+        ///********************************************** [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Category2Grammar {
             get {
@@ -115,26 +137,24 @@ namespace RoboCup.AtHome.GPSRCmdGen {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ; grammar name Category III
-        ///; grammar tier High
-        ///
-        ///$Main     = $polite $complex.
-        ///
-        ///
-        ///##############################################################################
+        ///   Looks up a localized string similar to ##############################################################################
         ///#
-        ///# Complex commands
+        ///# Category3 Grammar
+        ///# 
+        ///# Author:  Mauricio Matamoros
+        ///# Date:    March 2015
         ///#
+        ///# IMPORTANT: 
+        ///# Since this document declares a grammar for generating sentences,
+        ///# NO RECURSIVE rules must be used.
+        ///# 
         ///##############################################################################
-        ///$complex  = $triple
-        ///$complex  = $single, $single, and $single
-        ///$complex  = $doublel, and $single
-        ///$complex  = $single, $doubler
         ///
-        ///##############################################################################
-        ///#
-        ///# Triple task commands
-        /// [rest of string was truncated]&quot;;.
+        ////*****************************************************************************
+        ///*
+        ///* FORMAT
+        ///*
+        ///********************************************** [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Category3Grammar {
             get {

@@ -17,20 +17,20 @@ namespace RoboCup.AtHome.CommandGenerator
 		/// Initializes a new instance of the <see cref="RoboCup.AtHome.CommandGenerator.PredefindedQuestion"/> class.
 		/// </summary>
 		/// <remarks>Intended for serialization purposes</remarks>
-		public PredefindedQuestion() : this("tell your name", "[varies]", DifficultyDegree.Easy) { }
+		public PredefindedQuestion() : this("tell your name", "[varies]", DifficultyDegree.Low) { }
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="RoboCup.AtHome.CommandGenerator.PredefindedQuestion"/> class.
 		/// </summary>
 		/// <param name="question">The question for which there is no an unique answer</param>
-		public PredefindedQuestion(string question) : this(question, "[varies]", DifficultyDegree.Easy) { }
+		public PredefindedQuestion(string question) : this(question, "[varies]", DifficultyDegree.Low) { }
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="RoboCup.AtHome.CommandGenerator.PredefindedQuestion"/> class.
 		/// </summary>
 		/// <param name="question">The question</param>
 		/// <param name="answer">The answer for the question</param>
-		public PredefindedQuestion(string question, string answer) : this(question, answer, DifficultyDegree.Easy) { }
+		public PredefindedQuestion(string question, string answer) : this(question, answer, DifficultyDegree.Low) { }
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="RoboCup.AtHome.CommandGenerator.PredefindedQuestion"/> class.
@@ -86,7 +86,7 @@ namespace RoboCup.AtHome.CommandGenerator
 		/// <summary>
 		/// Gets or sets the  difficulty degree (tier) for UNDERSTANDING the question
 		/// </summary>
-		[XmlAttribute("difficulty"), DefaultValue(DifficultyDegree.Easy)]
+		[XmlAttribute("difficulty"), DefaultValue(DifficultyDegree.Low)]
 		public DifficultyDegree Tier{ get; set; }
 
 		#endregion

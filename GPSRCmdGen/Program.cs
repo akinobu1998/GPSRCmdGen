@@ -42,15 +42,16 @@ namespace RoboCup.AtHome.GPSRCmdGen
 		/// <returns>The user's option.</returns>
 		protected override char GetOption()
 		{
-			return base.GetOption(1, 3);
+			return base.GetOption(0, 3);
 		}
 
 		private Task GetTask(char category)
 		{
 			switch (category)
 			{
+				case '0': return gen.GenerateTask(DifficultyDegree.Low);
 				case '1': return gen.GenerateTask(DifficultyDegree.Easy);
-				case '2': return gen.GenerateTask(DifficultyDegree.Moderate);
+                case '2': return gen.GenerateTask(DifficultyDegree.Moderate);
 				case '3': return gen.GenerateTask(DifficultyDegree.High);
 				default: return null;
 			}
@@ -65,8 +66,9 @@ namespace RoboCup.AtHome.GPSRCmdGen
 			DifficultyDegree tier = DifficultyDegree.Unknown;
 			switch (opc)
 			{
-				case '1': 
-				case '2': 
+				case '0': 
+				case '1':
+                case '2': 
 				case '3':
 					task = GetTask(opc);
 					break;
@@ -102,7 +104,7 @@ namespace RoboCup.AtHome.GPSRCmdGen
 			this.gen = new GPSRGenerator ();
 
 			Console.ForegroundColor = ConsoleColor.Gray;
-			Console.WriteLine ("GPSR Generator 2016 Beta");
+			Console.WriteLine ("GPSR Generator for JapanOpen 2023 Beta");
 			Console.WriteLine ();
 			base.LoadData();
 			Console.WriteLine ();
@@ -136,7 +138,7 @@ namespace RoboCup.AtHome.GPSRCmdGen
 
 			p.Setup ();
 			for (int i = 0; i < args.Length; ++i){
-				if (Int32.TryParse(args[i], out category) && (category > 0) && (category < 4))
+				if (Int32.TryParse(args[i], out category) && (category >= 0) && (category < 4))
 				{
 					Task t = null;
 					p.RunOption((char)(category + '0'), ref t);

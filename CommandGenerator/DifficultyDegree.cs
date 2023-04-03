@@ -18,12 +18,18 @@ namespace RoboCup.AtHome.CommandGenerator
 		/// </summary>
 		[XmlEnum("none")]
 		None = 0,
-		/// <summary>
-		/// Solving the task requires a minimum effort
-		/// A task using an element with this attribute is easy to solve
-		/// </summary>
-		[XmlEnum("easy")]
-		Easy = 1,
+        /// <summary>
+        /// Solving the task requires less than a minimum effort
+        /// A task using an element with this attribute is very easy to solve
+        /// </summary>
+        [XmlEnum("low")]
+        Low = 1,
+        /// <summary>
+        /// Solving the task requires a minimum effort
+        /// A task using an element with this attribute is easy to solve
+        /// </summary>
+        [XmlEnum("easy")]
+		Easy = 2,
 		/// <summary>
 		/// Solving the task requires a moderate effort
 		/// A task using an element with this attribute is not so easy to solve

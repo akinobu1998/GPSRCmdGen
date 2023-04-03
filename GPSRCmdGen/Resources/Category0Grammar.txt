@@ -1,0 +1,80 @@
+﻿; grammar name Category Zero
+; grammar tier Low
+
+$Main		= $complex 
+
+##############################################################################
+#
+# Carrying: Go to room, grasp an object and place it
+# 
+##############################################################################
+$complex	= $goroom, $graspobj and ($placeobj | $giveobj)
+
+$goroom		= $vbgoto the {room}
+$graspobj	= $vbgrasp the {kobject} on the ${beacon}
+$placeobj	= $vbplace it on the {placement}
+$giveobj	= $vbgive it to {name}
+
+
+##############################################################################
+#
+# Vision: Find a person and talk with
+# 
+##############################################################################
+$complex	= $report how many $count
+
+$report     = $vbreport me
+$count     = (people in the {room} are {gesture} | {object} there are on the ${beacon})
+
+
+##############################################################################
+#
+# Navigation male: Go to the room, find person and follow / guide person.
+# 
+##############################################################################
+$complex	= $goroom, $findmale at the {placement 1} and ($vbfollow {name 1} | $vbguide him to the {placement 2})
+
+$goroom     = $vbgoto the {room}
+$findmale = $vbfind {male 1}
+
+##############################################################################
+#
+# Navigation female: Go to the room, find person and follow / guide person.
+# 
+##############################################################################
+$complex	= $goroom, $findfemale at the {placement 1} and ($vbfollow {name 1} | $vbguide her to the {placement 2})
+
+$findfemale = $vbfind {female 1}
+
+
+##############################################################################
+#
+# Speech: Go to the room, find person at the place and ask/answer question
+# 
+##############################################################################
+$complex	= $goroom, $findmale at the {placement 1} and ($vbanswer his question | $vbask him {question}).
+$complex	= $goroom, $findfemale at the {placement 1} and ($vbanswer her question | $vbask her {question}).
+
+
+##############################################################################
+#
+# Verbs
+# 
+##############################################################################
+
+$vbplace        = place
+$vbgive         = give
+$vbgoto		    = go to
+$vbgrasp        = grasp
+
+$vbreport   	= tell
+
+$vbfind         = find
+$vbfollow	    = follow
+$vbguide        = guide
+$vbask          = ask
+$vbanswer       = answer
+
+# $vbdeliver	= bring | carry | deliver | take
+# $vbfind		= find
+# $vbtake		= grasp
