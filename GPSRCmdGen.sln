@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPSRCmdGen", "GPSRCmdGen\GPSRCmdGen.csproj", "{34FB033E-112E-418F-B815-ADB8EC36027C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandGenerator", "CommandGenerator\CommandGenerator.csproj", "{0C657018-3F18-40D4-836E-2D2D0D529660}"
@@ -13,14 +15,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C657018-3F18-40D4-836E-2D2D0D529660}.Debug|x86.ActiveCfg = Debug|x86
-		{0C657018-3F18-40D4-836E-2D2D0D529660}.Debug|x86.Build.0 = Debug|x86
-		{0C657018-3F18-40D4-836E-2D2D0D529660}.Release|x86.ActiveCfg = Release|x86
-		{0C657018-3F18-40D4-836E-2D2D0D529660}.Release|x86.Build.0 = Release|x86
 		{34FB033E-112E-418F-B815-ADB8EC36027C}.Debug|x86.ActiveCfg = Debug|x86
 		{34FB033E-112E-418F-B815-ADB8EC36027C}.Debug|x86.Build.0 = Debug|x86
 		{34FB033E-112E-418F-B815-ADB8EC36027C}.Release|x86.ActiveCfg = Release|x86
 		{34FB033E-112E-418F-B815-ADB8EC36027C}.Release|x86.Build.0 = Release|x86
+		{0C657018-3F18-40D4-836E-2D2D0D529660}.Debug|x86.ActiveCfg = Debug|x86
+		{0C657018-3F18-40D4-836E-2D2D0D529660}.Debug|x86.Build.0 = Debug|x86
+		{0C657018-3F18-40D4-836E-2D2D0D529660}.Release|x86.ActiveCfg = Release|x86
+		{0C657018-3F18-40D4-836E-2D2D0D529660}.Release|x86.Build.0 = Release|x86
 		{CC113145-1565-4976-8D87-8C2D40471F2E}.Debug|x86.ActiveCfg = Debug|x86
 		{CC113145-1565-4976-8D87-8C2D40471F2E}.Debug|x86.Build.0 = Debug|x86
 		{CC113145-1565-4976-8D87-8C2D40471F2E}.Release|x86.ActiveCfg = Release|x86
@@ -28,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78921521-ACC3-409F-9B8B-0790744F3ED8}
 	EndGlobalSection
 EndGlobal
