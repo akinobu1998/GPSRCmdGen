@@ -163,7 +163,7 @@ namespace RoboCup.AtHome.CommandGenerator
 					break;
 
 				case GPSRObjectType.Known:
-					tier = DifficultyDegree.Easy;
+					tier = DifficultyDegree.Low;
 					break;
 
 				default:
