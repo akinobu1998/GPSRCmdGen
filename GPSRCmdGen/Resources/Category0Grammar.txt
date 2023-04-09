@@ -24,7 +24,7 @@ $giveobj	= $vbgive it to {name}
 $complex	= $report how many $count
 
 $report     = $vbreport me
-$count     = (people in the {room} are {gesture} | {object} there are on the ${beacon})
+$count     = (people in the {room} are {gesture} | {category} there are on the ${beacon})
 
 
 ##############################################################################
@@ -32,8 +32,8 @@ $count     = (people in the {room} are {gesture} | {object} there are on the ${b
 # Navigation: Go to the room, find person and follow / guide person.
 # 
 ##############################################################################
-$complex	= $gofindmale and ($vbfollow {name 1} | $vbguide him to the {placement 2})
-$complex	= $gofindfemale and ($vbfollow {name 1} | $vbguide her to the {placement 2})
+$complex	= $gofindmale and ($vbfollow him | $vbguide him to the {placement 2})
+$complex	= $gofindfemale and ($vbfollow her | $vbguide her to the {placement 2})
 
 ##############################################################################
 #
@@ -45,7 +45,7 @@ $complex	= $gofindfemale and ($vbanswer her question | $vbask her {question}).
 
 
 $gofindmale = $goroom, $findmale at the {placement 1}
-$gofindfemale = $goroom, $findmale at the {placement 1}
+$gofindfemale = $goroom, $findfemale at the {placement 1}
 
 $findmale = $vbfind {male 1}
 $findfemale = $vbfind {female 1}
