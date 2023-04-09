@@ -114,9 +114,9 @@ namespace RoboCup.AtHome.GPSRCmdGen
             task.AddObject("block", GPSRObjectType.Known);
             tmp.Add(task);
 
-            SpecificLocation livingroom = SpecificLocation.Placement("living room");
-            livingroom.Room = new Room("living room");
-            Category kitchen = new Category("kitchen items", livingroom);
+            SpecificLocation longtable_b = SpecificLocation.Placement("long table b");
+            longtable_b.Room = new Room("living room");
+            Category kitchen = new Category("kitchen items", longtable_b);
             kitchen.AddObject("detergent", GPSRObjectType.Known);
             kitchen.AddObject("cup", GPSRObjectType.Known);
             kitchen.AddObject("lunch box", GPSRObjectType.Alike);

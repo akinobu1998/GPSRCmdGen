@@ -29,32 +29,26 @@ $count     = (people in the {room} are {gesture} | {object} there are on the ${b
 
 ##############################################################################
 #
-# Navigation male: Go to the room, find person and follow / guide person.
+# Navigation: Go to the room, find person and follow / guide person.
 # 
 ##############################################################################
-$complex	= $goroom, $findmale at the {placement 1} and ($vbfollow {name 1} | $vbguide him to the {placement 2})
-
-$goroom     = $vbgoto the {room}
-$findmale = $vbfind {male 1}
-
-##############################################################################
-#
-# Navigation female: Go to the room, find person and follow / guide person.
-# 
-##############################################################################
-$complex	= $goroom, $findfemale at the {placement 1} and ($vbfollow {name 1} | $vbguide her to the {placement 2})
-
-$findfemale = $vbfind {female 1}
-
+$complex	= $gofindmale and ($vbfollow {name 1} | $vbguide him to the {placement 2})
+$complex	= $gofindfemale and ($vbfollow {name 1} | $vbguide her to the {placement 2})
 
 ##############################################################################
 #
 # Speech: Go to the room, find person at the place and ask/answer question
 # 
 ##############################################################################
-$complex	= $goroom, $findmale at the {placement 1} and ($vbanswer his question | $vbask him {question}).
-$complex	= $goroom, $findfemale at the {placement 1} and ($vbanswer her question | $vbask her {question}).
+$complex	= $gofindmale and ($vbanswer his question | $vbask him {question}).
+$complex	= $gofindfemale and ($vbanswer her question | $vbask her {question}).
 
+
+$gofindmale = $goroom, $findmale at the {placement 1}
+$gofindfemale = $goroom, $findmale at the {placement 1}
+
+$findmale = $vbfind {male 1}
+$findfemale = $vbfind {female 1}
 
 ##############################################################################
 #
@@ -74,7 +68,3 @@ $vbfollow	    = follow
 $vbguide        = guide
 $vbask          = ask
 $vbanswer       = answer
-
-# $vbdeliver	= bring | carry | deliver | take
-# $vbfind		= find
-# $vbtake		= grasp
