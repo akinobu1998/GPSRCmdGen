@@ -16,11 +16,11 @@ namespace RoboCup.AtHome.GPSRCmdGen
         public static List<Gesture> GetDefaultGestures()
         {
             List<Gesture> gestures = new List<Gesture>();
-            gestures.Add(new Gesture("waving", DifficultyDegree.Low));
-            gestures.Add(new Gesture("rising left arm", DifficultyDegree.Low));
-            gestures.Add(new Gesture("rising right arm", DifficultyDegree.Low));
-            gestures.Add(new Gesture("pointing left", DifficultyDegree.Low));
-            gestures.Add(new Gesture("pointing right", DifficultyDegree.Low));
+            gestures.Add(new Gesture("standing", DifficultyDegree.Low));
+            gestures.Add(new Gesture("raising one hand", DifficultyDegree.Low));
+            gestures.Add(new Gesture("waving both hands over head", DifficultyDegree.Low));
+            gestures.Add(new Gesture("performing the OK symbol", DifficultyDegree.Low));
+            gestures.Add(new Gesture("sitting on a chair", DifficultyDegree.Low));
             return gestures;
         }
 
@@ -141,16 +141,16 @@ namespace RoboCup.AtHome.GPSRCmdGen
         internal static List<PredefindedQuestion> GetDefaultQuestions()
         {
             List<PredefindedQuestion> q = new List<PredefindedQuestion>();
-            q.Add(new PredefindedQuestion("What is your teamÅfs name?", "My team is SSH."));
-            q.Add(new PredefindedQuestion("What day is it today?", "Today is March 8th."));
-            q.Add(new PredefindedQuestion("What is the highest mountain in the world?", "It is Mt. Everest."));
-            q.Add(new PredefindedQuestion("How much is 174 minus 11?", "It is 163."));
-            q.Add(new PredefindedQuestion("How many campuses does Tokyo University have?", "Tokyo University has 3 campuses."));
-            q.Add(new PredefindedQuestion("Where will RoboCup 2023 take place?", "RoboCup 2023 will take place in Bordeaux, France."));
-            q.Add(new PredefindedQuestion("Who is the current governor of Tokyo?", "The current governor of Tokyo is Yuriko Koike."));
-            q.Add(new PredefindedQuestion("Where are you from?", "IÅfm from Japan."));
-            q.Add(new PredefindedQuestion("What is your favorite team?", "Absolutely SSH! But weÅfre want to explore other team as well."));
-            q.Add(new PredefindedQuestion("How many members in your team?", "I have 10 wonderful members in my team."));
+            q.Add(new PredefindedQuestion("What is the highest mountain in Japan?", "It is Mt. Fuji."));
+            q.Add(new PredefindedQuestion("What is the largest lake in Japan?", "It is Lake Biwa."));
+            q.Add(new PredefindedQuestion("Where are you coming from?", "We are coming from COUNTRY."));
+            q.Add(new PredefindedQuestion("Are you enjoying this competition?", "Yes, we are enjoying it a lot."));
+            q.Add(new PredefindedQuestion("What is your favorite drink?", "My favorite drink is DRINK_NAME."));
+            q.Add(new PredefindedQuestion("How are you today?", "I am feeling EMOTION."));
+            q.Add(new PredefindedQuestion("Do Thai people ride an elephant to go to the university?", "No, they ride a dinosaur."));
+            q.Add(new PredefindedQuestion("Can you tell me which country won the WBC this year?", "Japan."));
+            q.Add(new PredefindedQuestion("Can you tell me how many joints your robot arm has?", "It has NUMBER_OF_ARMS."));
+            q.Add(new PredefindedQuestion("What is 3 times 5?", "It is 15."));
             return q;
         }
     }
