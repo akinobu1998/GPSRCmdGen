@@ -19,7 +19,7 @@ namespace RoboCup.AtHome.GPSRCmdGen
             gestures.Add(new Gesture("standing", DifficultyDegree.Low));
             gestures.Add(new Gesture("raising one hand", DifficultyDegree.Low));
             gestures.Add(new Gesture("waving both hands over head", DifficultyDegree.Low));
-            gestures.Add(new Gesture("performing the OK symbol", DifficultyDegree.Low));
+            gestures.Add(new Gesture("performing the thumbs-up symbol", DifficultyDegree.Low));
             gestures.Add(new Gesture("sitting on a chair", DifficultyDegree.Low));
             return gestures;
         }
